@@ -49,7 +49,7 @@ section#entertainment {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* Showcase */
@@ -76,6 +76,32 @@ section#entertainment {
   font-size: 2rem;
 }
 
+/* Footer */
+footer .footer-cols {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  /* text-align: center; */
+  font-size: 14px;
+}
+
+.footer-cols ul {
+  list-style: none;
+}
+
+.footer-cols ul li:first-child {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: #444 solid 1px;
+  margin-bottom: 1rem;
+}
+
+.footer-bottom {
+  background: #333;
+  padding: 1rem;
+}
+
 /* Utility classes */
 .container {
   max-width: 1180px;
@@ -86,6 +112,10 @@ section#entertainment {
 
 .lead {
   font-size: 1.3rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .mb {
@@ -101,6 +131,7 @@ section#entertainment {
   padding: 1rem;
   color: #fff;
   display: inline-block;
+  border-radius: 10px;
 }
 
 .btn-primary {
@@ -148,11 +179,13 @@ nav {
 nav ul {
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 nav li {
   display: inline;
-  float: left;
+  /* float: left; */
 }
+
 nav a {
   display: inline-block;
   width: 100px;
@@ -247,4 +280,10 @@ nav a#openup {
 
 .cf {
   zoom: 1;
+}
+
+@media screen and (max-width: 780px) {
+  .gift-cards {
+    grid-template-columns: 1fr;
+  }
 }
